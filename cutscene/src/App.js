@@ -9,20 +9,22 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-      <Router>
+    <Router>
+      <Switch>
       <div>
       <Navibar />
       <div>
-      <Switch>
-      <Route exact path="/browse">
+      
+      <Route exact path="/">
       <BrowsePage />
       </Route>
-      <Route exact path="/works">
+      <Route path="/works/:clipId">
       <ClipPage />
       </Route>
-      </Switch>
+      
       </div>
-      </div>
+        </div>
+        </Switch>
       </Router>
   );
 }

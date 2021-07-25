@@ -8,8 +8,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 function Navibar() {
   return (
 <div>
-    <Navbar bg="light" variant="light">
-    <Navbar.Brand href="/browse">
+    <Navbar bg="light" variant="light" style={{justifyContent: "space-between"}}>
+    <Navbar.Brand href="/">
     <img
       alt="Cutscene logo"
       src={logo}
@@ -17,7 +17,7 @@ function Navibar() {
   NFT
     </Navbar.Brand>
     <Nav >
-    <LinkContainer to="/browse">
+    <LinkContainer to="/">
       <Nav.Link>Browse</Nav.Link>
     </LinkContainer>
     <LinkContainer to="/works">
@@ -29,8 +29,9 @@ function Navibar() {
     <LinkContainer to="/#3">
       <Nav.Link>FAQ</Nav.Link>
     </LinkContainer>
-    </Nav>
-    <LinkContainer to="/#">
+        </Nav>
+        <Nav style={{marginleft: "50%"}}>
+    <LinkContainer to="/#create">
     <Button variant="outline-dark">Create</Button>
     </LinkContainer>
     <LinkContainer to="/#login">
@@ -38,7 +39,8 @@ function Navibar() {
     </LinkContainer>
     <LinkContainer to="/#signup">
     <Button variant="dark">Sign Up</Button>
-    </LinkContainer>
+          </LinkContainer>
+          </Nav>
     </Navbar>
 </div>
 );
