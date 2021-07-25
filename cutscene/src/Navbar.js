@@ -9,12 +9,12 @@ function Navibar() {
   return (
 <div>
     <Navbar bg="light" variant="light">
-    <Navbar.Brand href="/browse">
+    <Navbar.Brand>
     <img
       alt="Cutscene logo"
       src={logo}
     />
-  NFT
+    NFT
     </Navbar.Brand>
     <Nav >
     <LinkContainer to="/browse">
@@ -23,20 +23,18 @@ function Navibar() {
     <LinkContainer to="/works">
       <Nav.Link>My Clips</Nav.Link>
     </LinkContainer>
-    <LinkContainer to="/#2">
+    <LinkContainer to="#2">
       <Nav.Link>How It Works</Nav.Link>
     </LinkContainer>
-    <LinkContainer to="/#3">
+    <LinkContainer to="#3">
       <Nav.Link>FAQ</Nav.Link>
     </LinkContainer>
     </Nav>
-    <LinkContainer to="/#">
-    <Button variant="outline-dark">Create</Button>
-    </LinkContainer>
-    <LinkContainer to="/#login">
+    <Button variant="outline-dark" href="/create">Create</Button>
+    <LinkContainer to="#login">
     <Button variant="light">Log In</Button>
     </LinkContainer>
-    <LinkContainer to="/#signup">
+    <LinkContainer to="#signup">
     <Button variant="dark">Sign Up</Button>
     </LinkContainer>
     </Navbar>

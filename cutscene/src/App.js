@@ -2,6 +2,7 @@ import './App.css';
 import Navibar from './Navbar.js';
 import BrowsePage from './BrowsePage.js';
 import ClipPage from './ClipPage.js';
+import CreatePage from './CreatePage.js'
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,6 +20,9 @@ function App() {
       </Route>
       <Route exact path="/works">
       <ClipPage />
+      </Route>
+      <Route exact path="/create">
+      <CreatePage />
       </Route>
       </Switch>
       </div>
